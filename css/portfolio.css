@@ -118,43 +118,29 @@ img {
   border-bottom-style: solid;
   border-width: 1px;
   border-color: var(--header-border-color);
-  height: 80px;
-}
-
-.container-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--first-logo-color);
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  display: inline-block;
 }
 
 .logo__header {
   color: var(--second-logo-color);
 }
 
-.nav-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.menu-button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
 }
 
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
+.menu-button .menu-button__icon-close {
+  display: none;
+}
+
+.menu-button.is-open .menu-button__icon-close {
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu {
+  display: none;
 }
 
 .nav-list__link {
@@ -163,8 +149,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-link-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: block;
   -webkit-transition-property: color;
   transition-property: color;
@@ -196,22 +180,9 @@ img {
   background-color: var(--header-sec-link-color);
 }
 
-.list-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-}
-
-.list-contact__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .list-contact__icon {
   max-width: 16px;
   display: block;
-  margin: auto;
-  margin-right: 10px;
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-duration: 250ms;
@@ -230,8 +201,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-mail-tel-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,6 +215,19 @@ img {
 .list-contact__link:hover, .list-contact__link:focus {
   color: var(--header-hover-color);
   fill: var(--header-hover-color);
+}
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--first-logo-color);
+  margin-right: 93px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: inline-block;
 }
 
 .portfolio {

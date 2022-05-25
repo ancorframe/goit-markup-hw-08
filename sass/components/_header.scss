@@ -2,55 +2,53 @@
   border-bottom-style: solid;
   border-width: 1px;
   border-color: var(--header-border-color);
-  height: 80px;
+  // height: 60px;
 }
 
-.container-header {
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  font-family: "Raleway";
-  @include font(700, 26px, 1.19, 0.03em);
-  // font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
-  // letter-spacing: 0.03em;
-  color: var(--first-logo-color);
-  margin-right: 93px;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  display: inline-block;
-}
+// .container-header {
+//   display: flex;
+//   align-items: center;
+// }
 
 .logo__header {
   color: var(--second-logo-color);
 }
 
-.nav-list {
-  display: flex;
+.menu-button{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: transparent;
 }
 
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
+.menu-button .menu-button__icon-close{
+  display: none;
 }
+
+.menu-button.is-open .menu-button__icon-close{
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu{
+  display: none;
+}
+// .nav-list {
+//   display: flex;
+// }
+
+// .nav-list__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
 .nav-list__link {
   position: relative;
   @include font(500, null, 1.14, 0.02em);
-  // font-weight: 500;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
-  color: var(--header-link-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: block;
 
+  color: var(--header-link-color);
+  // padding-top: 32px;
+  // padding-bottom: 32px;
+  display: block;
   @include transition(color);
-  // transition-property: color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus{
     color: var(--header-hover-color);
@@ -75,25 +73,21 @@
   background-color: var(--header-sec-link-color);
 }
 
-.list-contact {
-  display: flex;
-  margin-left: auto;
-}
+// .list-contact {
+//   display: flex;
+//   margin-left: auto;
+// }
 
-.list-contact__item:not(:last-child) {
-  margin-right: 50px;
-}
+// .list-contact__item:not(:last-child) {
+//   margin-right: 50px;
+// }
 
 .list-contact__icon {
   max-width: 16px;
   display: block;
-  margin: auto;
-  margin-right: 10px;
-
+  // margin: auto;
+  // margin-right: 10px;
   @include transition(fill);
-  // transition-property: fill;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--header-hover-color);
@@ -103,31 +97,15 @@
 
 .list-contact__link {
   @include font(500, null, 1.14, 0.02em);
-  // font-weight: 500;
-  // line-height: 1.14;
-  // letter-spacing: 0.02em;
   color: var(--header-mail-tel-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
   display: flex;
 
   @include transition(color);
-  // transition-property: color;
-  // transition-duration: 250ms;
-  // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--header-hover-color);
     fill: var(--header-hover-color);
   }
 }
-
-// .nav-list__link:hover,
-// .nav-list__link:focus,
-// .list-contact__link:hover,
-// .list-contact__link:focus,
-// .list-contact__icon:hover,
-// .list-contact__icon:focus {
-// color: var(--header-hover-color);
-//   fill: var(--header-hover-color);
-// }
