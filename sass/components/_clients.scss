@@ -15,13 +15,13 @@
   margin-bottom: 50px;
 }
 
-.clients-list {
-  display: flex;
-}
+// .clients-list {
+//   display: flex;
+// }
 
-.clients-list__item + .clients-list__item {
-  margin-left: 30px;
-}
+// .clients-list__item + .clients-list__item {
+//   margin-left: 30px;
+// }
 
 .clients-list__link {
   fill: var(--soc-link-color-fist);

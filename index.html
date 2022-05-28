@@ -21,55 +21,79 @@
         <a href="./index.html" lang="en" class="logo link"
           >Web<span class="logo__header">Studio</span></a
         >
-        <button type="button" class="menu-button is-open" data-menu-button>
-          <svg width="40" height="40" aria-label="Переключатель мобильно меню">
-            <use
-              class="menu-button__icon-close"
-              href="./images/icons.svg#icon-close"
-            ></use>
-            <use
-              class="menu-button__icon-menu"
-              href="./images/icons.svg#icon-menu"
-            ></use>
-          </svg>
-        </button>
         <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav-list__item">
-              <a
-                href="./index.html"
-                class="nav-list__link nav-list__link_studio nav-list__link_current link"
-                >Студия</a
-              >
-            </li>
-            <li class="nav-list__item">
-              <a href="./portfolio.html" class="nav-list__link link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="nav-list__item">
-              <a href="" class="nav-list__link link">Контакты</a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="menu-button"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильно меню"
+            >
+              <use
+                class="menu-button__icon-close"
+                href="./images/icons.svg#icon-close"
+              ></use>
+              <use
+                class="menu-button__icon-menu"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="flex">
+              <ul class="nav-list list">
+                <li class="nav-list__item">
+                  <a
+                    href="./index.html"
+                    class="nav-list__link nav-list__link_studio nav-list__link_current link"
+                    >Студия</a
+                  >
+                </li>
+                <li class="nav-list__item">
+                  <a href="./portfolio.html" class="nav-list__link link"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav-list__item">
+                  <a href="" class="nav-list__link link">Контакты</a>
+                </li>
+              </ul>
+
+              <ul class="list-contact list">
+                <li class="list-contact__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="list-contact__mail link"
+                  >
+                    <svg class="list-contact__icon" width="16" height="12">
+                      <use href="./images/icons.svg#icon-envelope-hover"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="list-contact__item">
+                  <a href="tel:+380961111111" class="list-contact__tel link">
+                    <svg class="list-contact__icon" width="10" height="16">
+                      <use href="./images/icons.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="mob-social list">
+                <li class="mobile-social__item "><a href="#" class="mobile-social__link link">Instagram</a></li>
+                <li class="mobile-social__item "><a href="#" class="mobile-social__link link">Twitter</a></li>
+                <li class="mobile-social__item "><a href="#" class="mobile-social__link link">Facebook</a></li>
+                <li class="mobile-social__item "><a href="#" class="mobile-social__link link">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <ul class="list-contact list">
-          <li class="list-contact__item">
-            <a href="mailto:info@devstudio.com" class="list-contact__link link">
-              <svg class="list-contact__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="list-contact__item">
-            <a href="tel:+380961111111" class="list-contact__link link">
-              <svg class="list-contact__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
     <!-- MAIN -->
@@ -172,7 +196,7 @@
         </div>
       </section>
       <!--ABOUT-->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <h2 hidden class="about__title">Особенности</h2>
           <ul class="about-list list">
@@ -226,9 +250,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- SERVICES -->
-      <section class="services">
+      <!-- <section class="services">
         <div class="container">
           <h2 class="services__title">Чем мы занимаемся</h2>
           <ul class="services-list list">
@@ -270,9 +294,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- TEAM -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
@@ -442,9 +466,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- CLIENTS -->
-      <section class="clients">
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="clients__title">Постоянные клиенты</h2>
           <ul class="clients-list list">
@@ -492,10 +516,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
     </main>
     <!-- FOOTER -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-link">
           <a href="./index.html" lang="en" class="logo logo_retreat link"
@@ -581,7 +605,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
