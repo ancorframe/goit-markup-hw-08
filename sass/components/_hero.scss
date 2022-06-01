@@ -1,24 +1,69 @@
 .hero {
-
   background-color: var(--hero-bkgd-color);
   padding-top: 118px;
   padding-bottom: 118px;
+  max-width: 100%;
+  height: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero-bkgn.jpg);
+    url(../images/heromobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/heromobile2x.jpg);
+  }
   background-position: center;
   max-width: 1600px;
-  width: 100%;
+  // width: 100%;
   margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/herotablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/herotablet2x.jpg);
+    }
+  }
 
-
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/herodesk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/herodesk2x.jpg);
+    }
+  }
   @media screen and (min-width: 1200px) {
-      padding-top: 200px;
-  padding-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -34,8 +79,8 @@
 
   @media screen and (min-width: 1200px) {
     @include font(900, 44px, 1.36, 0.06em);
-     max-width: 696px;
-     height: 120px;
+    max-width: 696px;
+    height: 120px;
   }
 }
 
