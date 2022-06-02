@@ -571,7 +571,7 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 @media screen and (min-width: 768px) {
@@ -579,11 +579,24 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-list {
+    margin-bottom: 50px;
   }
 }
 
 .button-list__item {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .button-list__item {
+    margin-bottom: 15px;
+  }
 }
 
 .button-list__button {
@@ -718,6 +731,7 @@ img {
 }
 
 .overlay {
+  overflow: overlay;
   opacity: 0;
   position: absolute;
   top: 0;
