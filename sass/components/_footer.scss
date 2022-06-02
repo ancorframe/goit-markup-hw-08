@@ -137,13 +137,20 @@
 }
 
 .form-newsletter {
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    // margin-left: 151px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+  }
 }
 
 .form-newsletter__container {
   position: relative;
   margin-bottom: 20px;
   @media screen and (min-width: 768px) {
-    margin-left: 151px;
+    // margin-left: 151px;
   }
    @media screen and (min-width: 1200px) {
      margin: 0;
@@ -164,7 +171,7 @@
   color: rgba(255, 255, 255, 0.6);
 
   @media screen and (min-width: 768px) {
-    // width: 450px;
+    width: 450px;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 12px;

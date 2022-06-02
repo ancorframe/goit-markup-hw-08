@@ -88,7 +88,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -667,7 +666,7 @@ img {
 }
 
 .card-block__img {
-  width: 370px;
+  width: 100%;
   height: auto;
 }
 
@@ -726,6 +725,7 @@ img {
 }
 
 .overlay {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -748,6 +748,7 @@ img {
 .card-list__link:focus .overlay {
   -webkit-transform: translateY(0);
           transform: translateY(0);
+  opacity: 1;
 }
 
 .overlay__text {
@@ -953,15 +954,24 @@ img {
   background-color: var(--soc-link-color-four);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .form-newsletter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .form-newsletter__container {
   position: relative;
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: 768px) {
-  .form-newsletter__container {
-    margin-left: 151px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -986,6 +996,12 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+  .form-newsletter__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

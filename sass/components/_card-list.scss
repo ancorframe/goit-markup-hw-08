@@ -26,7 +26,7 @@
 }
 
 .card-block__img {
-  width: 370px;
+  width: 100%;
   height: auto;
 }
 
@@ -63,9 +63,11 @@
 .card-block {
   position: relative;
   overflow: hidden;
+  
 }
 
 .overlay {
+  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -77,6 +79,7 @@
   .card-list__link:hover &,
   .card-list__link:focus & {
     transform: translateY(0);
+    opacity: 1;
   }
 }
 

@@ -28,7 +28,10 @@
 .team-list {
   display: flex;
   flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
   margin: -15px;
+  }
+  
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
     margin: 0;
@@ -64,6 +67,8 @@
 }
 
 .team-list__img {
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
   }
