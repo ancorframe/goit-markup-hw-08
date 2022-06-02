@@ -62,11 +62,6 @@
   }
 }
 
-// .modal-close:hover,
-// .modal-close:focus .modal-close__icon {
-//   fill: var(--color-2196f3);
-// }
-
 .modal__title {
   width: 100%;
   height: 60px;
@@ -207,11 +202,6 @@
   height: 100%;
 }
 
-// .checkbox__input:checked + .checkbox__wrap {
-//   border-color: transparent;
-//   background-color: var(--color-2196f3);
-// }
-
 .button-submit {
   display: block;
   margin: 0 auto;
@@ -224,31 +214,7 @@
 
   font-family: "Roboto";
   @include font(700, 16px, 1.87, 0.06em);
-  // font-weight: 700;
-  // font-size: 16px;
-  // line-height: 1.87;
-  // letter-spacing: 0.06em;
+
   color: var(--color-ffffff);
   cursor: pointer;
 }
-
-// .field__input:focus,
-// .field__input:hover,
-// .field__textarea:focus,
-// .field__textarea:hover {
-//   border-color: var(--color-2196f3);
-// }
-
-// .field__input:not(:placeholder-shown) ~ .field__icon {
-//   fill: var(--color-2196f3);
-// }
-
-// .field__input:not(:placeholder-shown),
-// .field__textarea:not(:placeholder-shown) {
-//   border-color: var(--color-2196f3);
-// }
-
-// .field__input:focus ~ .field__icon,
-// .field__input:hover ~ .field__icon {
-//   fill: var(--color-2196f3);
-// }

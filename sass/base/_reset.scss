@@ -10,10 +10,6 @@ body {
   padding: 0;
 }
 
-/* :focus-visible {
-  outline: none;
-} */
-
 p,
 h1,
 h2,
@@ -39,8 +35,6 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  // outline: 1px solid red;
-
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -73,4 +67,8 @@ img {
 
 .list {
   list-style: none;
+}
+
+.no-scroll{
+ overflow: hidden;
 }

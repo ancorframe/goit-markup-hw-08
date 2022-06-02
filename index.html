@@ -113,93 +113,6 @@
           <button type="button" class="hero-button" data-modal-open>
             Заказать услугу
           </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <p class="modal__title">
-                Оставьте свои данные, мы вам перезвоним
-              </p>
-              <form autocomplete="off">
-                <div class="wrap">
-                  <label for="user-name" class="wrap__label">Имя</label>
-                  <div class="field">
-                    <input
-                      type="text"
-                      name="username"
-                      id="user-name"
-                      placeholder=" "
-                      class="field__input"
-                    />
-                    <svg class="field__icon" width="18" height="18">
-                      <use href="./images/icons.svg#icon-person-black"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="wrap">
-                  <label for="user-tel" class="wrap__label"> Телефон</label>
-                  <div class="field">
-                    <input
-                      type="tel"
-                      name="tel"
-                      id="user-tel"
-                      placeholder=" "
-                      class="field__input"
-                    />
-                    <svg class="field__icon" width="18" height="18">
-                      <use href="./images/icons.svg#icon-phone-black"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="wrap">
-                  <label for="user-email" class="wrap__label"> Почта</label>
-                  <div class="field">
-                    <input
-                      type="email"
-                      name="email"
-                      id="user-email"
-                      placeholder=" "
-                      class="field__input"
-                    />
-                    <svg class="field__icon" width="18" height="18">
-                      <use href="./images/icons.svg#icon-email-black"></use>
-                    </svg>
-                  </div>
-                </div>
-                <div class="wrap-textarea">
-                  <label for="feedback" class="wrap__label"> Комментарий</label>
-                  <div class="field">
-                    <textarea
-                      name="feedback"
-                      rows="5"
-                      placeholder="Введите текст"
-                      id="feedback"
-                      class="field__textarea"
-                    ></textarea>
-                  </div>
-                </div>
-                <label class="checkbox__label">
-                  <input
-                    class="checkbox__input visually-hidden"
-                    type="checkbox"
-                    name="policy"
-                    value="yes"
-                  />
-                  <span class="checkbox__wrap">
-                    <svg class="checkbox__icon" width="11" height="8">
-                      <use
-                        href="./images/icons.svg#icon-Vector-2-1"
-                      ></use></svg></span
-                  >Соглашаюсь с рассылкой и принимаю
-                  <a href="#" class="checkbox__policy">Условия договора</a>
-                </label>
-                <button type="submit" class="button-submit">Отправить</button>
-              </form>
-              <button data-modal-close type="button" class="modal-close">
-                <svg class="modal-close__icon">
-                  <use href="./images/icons.svg#icon-close-black"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
         </div>
       </section>
       <!-- ABOUT-->
@@ -713,6 +626,91 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <form autocomplete="off">
+          <div class="wrap">
+            <label for="user-name" class="wrap__label">Имя</label>
+            <div class="field">
+              <input
+                type="text"
+                name="username"
+                id="user-name"
+                placeholder=" "
+                class="field__input"
+              />
+              <svg class="field__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="wrap">
+            <label for="user-tel" class="wrap__label"> Телефон</label>
+            <div class="field">
+              <input
+                type="tel"
+                name="tel"
+                id="user-tel"
+                placeholder=" "
+                class="field__input"
+              />
+              <svg class="field__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="wrap">
+            <label for="user-email" class="wrap__label"> Почта</label>
+            <div class="field">
+              <input
+                type="email"
+                name="email"
+                id="user-email"
+                placeholder=" "
+                class="field__input"
+              />
+              <svg class="field__icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="wrap-textarea">
+            <label for="feedback" class="wrap__label"> Комментарий</label>
+            <div class="field">
+              <textarea
+                name="feedback"
+                rows="5"
+                placeholder="Введите текст"
+                id="feedback"
+                class="field__textarea"
+              ></textarea>
+            </div>
+          </div>
+          <label class="checkbox__label">
+            <input
+              class="checkbox__input visually-hidden"
+              type="checkbox"
+              name="policy"
+              value="yes"
+            />
+            <span class="checkbox__wrap">
+              <svg class="checkbox__icon" width="11" height="8">
+                <use
+                  href="./images/icons.svg#icon-Vector-2-1"
+                ></use></svg></span
+            >Соглашаюсь с рассылкой и принимаю
+            <a href="#" class="checkbox__policy">Условия договора</a>
+          </label>
+          <button type="submit" class="button-submit">Отправить</button>
+        </form>
+        <button data-modal-close type="button" class="modal-close">
+          <svg class="modal-close__icon">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

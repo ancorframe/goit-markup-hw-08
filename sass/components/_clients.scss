@@ -1,8 +1,6 @@
 .clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
-  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -15,8 +13,6 @@
   text-align: center;
   color: var(--main-title-color);
   margin-bottom: 30px;
-  @media screen and (min-width: 768px) {
-  }
 
   @media screen and (min-width: 1200px) {
     @include font(700, 36px, 1.16, 0.03em);
@@ -37,10 +33,6 @@
 .clients-list__item {
   margin: 15px;
 }
-
-// .clients-list__item + .clients-list__item {
-//   margin-left: 30px;
-// }
 
 .clients-list__link {
   fill: var(--soc-link-color-fist);
