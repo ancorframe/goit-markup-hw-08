@@ -66,6 +66,10 @@
 }
 
 .hero__title {
+  @media screen and (max-width: 387px) {
+    @include font(900, 24px, 1.36, 0.06em);
+  
+  }
   @include font(900, 26px, 1.61, 0.06em);
   text-align: center;
   text-transform: uppercase;
