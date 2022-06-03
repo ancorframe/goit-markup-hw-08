@@ -64,19 +64,17 @@
 
 .overlay {
   overflow: overlay;
-  opacity: 0;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(102%);
   background-color: var(--portf-overlay-bkgd-color);
   @include transition(transform);
   .card-list__link:hover &,
   .card-list__link:focus & {
     transform: translateY(0);
-    opacity: 1;
   }
 }
 

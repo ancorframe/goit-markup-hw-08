@@ -18,8 +18,8 @@
   }
 
   @media screen and (min-width: 768px) {
-    margin-right: auto;
-    margin-left: 61px;
+    // margin-right: auto;
+    // margin-left: 61px;
   }
   @media screen and (min-width: 1200px) {
     margin: 0;
@@ -28,13 +28,14 @@
 }
 
 .tab__conteiner {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-bottom: 60px;
+    justify-content: space-around;
+    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
     margin: 0;
-    align-items: baseline;
   }
 }
 
@@ -92,12 +93,9 @@
 }
 
 .footer-social {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
   @media screen and (min-width: 768px) {
-    margin-top: 5px;
-    margin-right: 74px;
+    // margin-top: 5px;
+    // padding-right: 74px;
   }
   @media screen and (min-width: 1200px) {
     margin: 0;
