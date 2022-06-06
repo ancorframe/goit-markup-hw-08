@@ -60,6 +60,8 @@
         url(../images/desktop/hero@2x.jpg);
     }
     max-width: 1600px;
+  }
+  @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -68,7 +70,6 @@
 .hero__title {
   @media screen and (max-width: 387px) {
     @include font(900, 24px, 1.36, 0.06em);
-  
   }
   @include font(900, 26px, 1.61, 0.06em);
   text-align: center;

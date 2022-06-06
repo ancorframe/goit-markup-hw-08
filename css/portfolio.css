@@ -382,6 +382,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .list-contact__item:first-child {
+    margin-right: 50px;
+  }
+}
+
 .list-contact__icon {
   max-width: 16px;
   display: none;
@@ -496,7 +502,6 @@ img {
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
-    margin-right: 30px;
   }
 }
 
